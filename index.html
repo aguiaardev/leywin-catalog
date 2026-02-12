@@ -516,16 +516,26 @@
         // CARREGAR DADOS DOS ARQUIVOS JSON
         async function loadData() {
             try {
-                const prodResponse = await fetch('/products.json');
-                produtos = await prodResponse.json();
+                console.log('Iniciando carregamento de dados...');
                 
-                const suppResponse = await fetch('/suppliers.json');
+                const prodResponse = await fetch('./products.json');
+                if (!prodResponse.ok) throw new Error(`Erro ao carregar produtos: ${prodResponse.status}`);
+                produtos = await prodResponse.json();
+                console.log('Produtos carregados:', produtos.length);
+                
+                const suppResponse = await fetch('./suppliers.json');
+                if (!suppResponse.ok) throw new Error(`Erro ao carregar fornecedores: ${suppResponse.status}`);
                 fornecedores = await suppResponse.json();
+                console.log('Fornecedores carregados:', fornecedores.length);
                 
                 renderProducts(produtos);
                 renderSuppliers();
             } catch (error) {
                 console.error('Erro ao carregar dados:', error);
+                // Fallback: carregar dados inline se houver erro
+                if (produtos.length === 0) {
+                    console.warn('Usando dados fallback ou vazios');
+                }
             }
         }
 

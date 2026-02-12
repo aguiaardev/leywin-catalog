@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Hoobuy",
+    "subtitle": "Agente principal",
+    "icon": "HB",
+    "description": "Melhor agente para produtos variados, com cupons e cashback.",
+    "link": "https://hoobuy.com/?utm_source=website&utm_medium=ambassador&utm_campaign=linksharing&inviteCode=yEk3D7kE"
+  },
+  {
+    "id": 2,
+    "name": "ACBuy",
+    "subtitle": "Agente alternativo",
+    "icon": "AC",
+    "description": "Ótimo para frete mais barato e produtos específicos.",
+    "link": "https://acbuy.com"
+  },
+  {
+    "id": 3,
+    "name": "Pandabuy",
+    "subtitle": "Agente popular",
+    "icon": "🐼",
+    "description": "Interface amigável e suporte em português.",
+    "link": "https://pandabuy.com"
+  }
+]

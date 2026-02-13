@@ -404,7 +404,6 @@
                     </div>
                     <div class="flex-1">
                         <h3 class="text-lg lg:text-xl font-bold mb-1">Cadastre-se na Hoobuy</h3>
-                        <p class="text-xs lg:text-sm text-gray-400">Usando meu link de afiliado</p>
                     </div>
                 </div>
                 <div class="flex flex-wrap lg:flex-nowrap items-center gap-2 lg:gap-3 w-full lg:w-auto">
@@ -434,6 +433,13 @@
         </div>
     </section>
 
+    <!-- DISCLAIMER AFTER CATALOG -->
+    <div class="px-4 pt-4">
+        <div class="container mx-auto text-center">
+            <div class="inline-block bg-white/5 text-gray-300 px-4 py-2 rounded-lg italic text-sm">Não vendemos, não afiliamos, links informativos apenas</div>
+        </div>
+    </div>
+
     <!-- PRODUTOS -->
     <section id="produtos" class="py-8 px-4">
         <div class="container mx-auto">
@@ -448,14 +454,21 @@
         <div class="container mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-3xl lg:text-5xl font-black mb-4">Fornecedores</h2>
-                <p class="text-gray-400">Principais fornecedores de que trabalhamos</p>
+                <p class="text-gray-400">Principais fornecedores</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-3">
                 <!-- Os fornecedores serão injetados aqui via JavaScript -->
             </div>
         </div>
     </section>
+    
+    <!-- DISCLAIMER AFTER SUPPLIERS -->
+    <div class="px-4 pt-6 pb-6">
+        <div class="container mx-auto text-center">
+            <div class="inline-block bg-white/5 text-gray-300 px-4 py-2 rounded-lg italic text-sm">Não vendemos, não afiliamos, links informativos apenas</div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="py-12 px-4 border-t border-white/10 mt-16">
@@ -500,6 +513,7 @@
                 </div>
             </div>
             <div class="text-center text-gray-400 pt-8 border-t border-white/5">
+                
                 <p>© 2026 LEYWIN • Todos os direitos reservados</p>
             </div>
         </div>
@@ -634,21 +648,21 @@
 
             fornecedores.forEach(supplier => {
                 const card = `
-                    <div class="bg-white/5 rounded-2xl border border-white/10 p-6 hover:bg-white/10 transition">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center overflow-hidden flex-shrink-0">
-                                <img src="${supplier.image}" alt="${supplier.name}" class="w-full h-full object-cover">
+                    <div class="bg-white/5 rounded-2xl border border-white/10 p-4 hover:bg-white/10 transition text-sm">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-lg flex items-center justify-center overflow-hidden flex-shrink-0">
+                                        <img src="${supplier.image}" alt="${supplier.name}" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <h3 class="text-sm sm:text-lg font-bold">${supplier.name}</h3>
+                                        <p class="text-[11px] text-gray-400">${supplier.subtitle}</p>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-400 mb-3 line-clamp-3">${supplier.description}</p>
+                                <a href="${supplier.link}" target="_blank" class="block w-full text-center px-3 py-2 bg-white text-black rounded-lg font-semibold hover:bg-gray-200 transition text-xs">
+                                    Acessar →
+                                </a>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-bold">${supplier.name}</h3>
-                                <p class="text-sm text-gray-400">${supplier.subtitle}</p>
-                            </div>
-                        </div>
-                        <p class="text-sm text-gray-400 mb-4">${supplier.description}</p>
-                        <a href="${supplier.link}" target="_blank" class="block w-full text-center px-4 py-2 bg-white text-black rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
-                            Acessar ${supplier.name} →
-                        </a>
-                    </div>
                 `;
                 container.innerHTML += card;
             });

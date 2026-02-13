@@ -38,5 +38,29 @@
     "image": "https://img.alicdn.com/bao/uploaded/i4/O1CN01UKodqo1QGEHBgDJT8_!!0-mtopupload.jpg_220x10000Q90.jpg_.webp",
     "description": "Ótimo.",
     "link": "https://www.goofish.com/personal?spm=a21ybx.item.itemHeader.1.3f9a3da6fd7SjG&userId=751861948"
+  },
+  {
+    "id": 6,
+    "name": "O peixinho que vende tablets",
+    "subtitle": "Fornecedor de tablets",
+    "image": "https://img.alicdn.com/bao/uploaded/i4/O1CN01e1yeob1mgiqdgOS2K_!!0-mtopupload.jpg_220x10000Q90.jpg_.webp",
+    "description": "Ótimo.",
+    "link": "https://www.goofish.com/personal?spm=a21ybx.item.itemHeader.1.97473da6aFRKvA&userId=90304984"
+  },
+  {
+    "id": 7,
+    "name": "Loja Outlet Digital Alvorada",
+    "subtitle": "Fornecedor de tudo",
+    "image": "https://img.alicdn.com/bao/uploaded/i1/O1CN01UibmYe1TXaD4C2lLB_!!0-mtopupload.jpg_220x10000Q90.jpg_.webp",
+    "description": "Ótimo.",
+    "link": "https://www.goofish.com/personal?spm=a21ybx.item.itemHeader.1.6eb23da6NuHiXJ&userId=2682112392"
+  },
+  {
+    "id": 8,
+    "name": "ASK Studio",
+    "subtitle": "Fornecedor de tênis",
+    "image": "./image/71f7c6f8-0ff0-4bf8-9805-a88034e6fd53.jfif",
+    "description": "Ótimo.",
+    "link": "https://melonyeezy.x.yupoo.com/albums?tab=gallery"
   }
 ]

@@ -1,83 +1,92 @@
 [
   {
     "id": 1,
-    "nome": "Intel Core i5 12ª Gen",
-    "preco": 842,
-    "categoria": "tech",
-    "subcategoria": "processadores",
-    "imagem": "https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=400",
-    "hoobuyLink": "https://hoobuy.com/product/1/1731069892966"
+    "nome": "Racing Suit European and American Style Leather Jacket",
+    "preco": 180,
+    "categoria": "roupas",
+    "subcategoria": "jaquetas",
+    "imagem": "../image/O1CN01SrW3vH1drPmJ0ohUC_!!2219401663789-0-cib.jpg",
+    "hoobuyLink": "https://hoobuy.com/product/0/967371863957?inviteCode=yEk3D7kE"
   },
   {
     "id": 2,
-    "nome": "Intel Core i3 10ª Gen",
+    "nome": "",
     "preco": 600,
     "categoria": "tech",
     "subcategoria": "processadores",
-    "imagem": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400",
-    "hoobuyLink": "https://hoobuy.com/product/1/1731069892967"
+    "imagem": "",
+    "hoobuyLink": ""
   },
   {
     "id": 3,
-    "nome": "AMD Ryzen 5 5600X",
+    "nome": "",
     "preco": 486,
     "categoria": "tech",
     "subcategoria": "processadores",
-    "imagem": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=400",
-    "hoobuyLink": "https://hoobuy.com/product/1/1731069892968"
+    "imagem": "",
+    "hoobuyLink": ""
   },
   {
     "id": 4,
-    "nome": "RTX 4060 Ti 8GB",
+    "nome": "",
     "preco": 1250,
     "categoria": "tech",
     "subcategoria": "placas-video",
-    "imagem": "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=400",
-    "hoobuyLink": "https://hoobuy.com/product/1/1731069892969"
+    "imagem": "",
+    "hoobuyLink": ""
   },
   {
     "id": 5,
-    "nome": "Air Jordan 1 Retro High",
+    "nome": "",
     "preco": 180,
     "categoria": "tenis",
     "subcategoria": "jordan",
-    "imagem": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400",
-    "hoobuyLink": "https://hoobuy.com/product/1/1731069892970"
+    "imagem": "",
+    "hoobuyLink": ""
   },
   {
     "id": 6,
-    "nome": "Nike Dunk Low Panda",
+    "nome": "",
     "preco": 150,
     "categoria": "tenis",
     "subcategoria": "nike",
-    "imagem": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400",
-    "hoobuyLink": "https://hoobuy.com/product/1/1731069892971"
+    "imagem": "",
+    "hoobuyLink": ""
   },
   {
     "id": 7,
-    "nome": "Supreme Box Logo Hoodie",
+    "nome": "",
     "preco": 280,
     "categoria": "roupas",
     "subcategoria": "moletons",
-    "imagem": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400",
-    "hoobuyLink": "https://hoobuy.com/product/1/1731069892972"
+    "imagem": "",
+    "hoobuyLink": ""
   },
   {
     "id": 8,
-    "nome": "Stussy Camiseta Basic",
+    "nome": "",
     "preco": 45,
     "categoria": "roupas",
     "subcategoria": "camisetas",
-    "imagem": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400",
-    "hoobuyLink": "https://hoobuy.com/product/1/1731069892973"
+    "imagem": "",
+    "hoobuyLink": ""
   },
   {
     "id": 9,
-    "nome": "Relógio Digital Premium",
+    "nome": "",
     "preco": 320,
     "categoria": "acessorios",
     "subcategoria": "relogios",
-    "imagem": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
-    "hoobuyLink": "https://hoobuy.com/product/1/1731069892974"
+    "imagem": "",
+    "hoobuyLink": ""
+  },
+  {
+    "id": 10,
+    "nome": "",
+    "preco": 120,
+    "categoria": "acessorios",
+    "subcategoria": "oculos",
+    "imagem": "",
+    "hoobuyLink": ""
   }
 ]

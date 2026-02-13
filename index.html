@@ -448,7 +448,7 @@
         <div class="container mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-3xl lg:text-5xl font-black mb-4">Fornecedores</h2>
-                <p class="text-gray-400">Principais agentes de importação que trabalhamos</p>
+                <p class="text-gray-400">Principais fornecedores de que trabalhamos</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -501,7 +501,6 @@
             </div>
             <div class="text-center text-gray-400 pt-8 border-t border-white/5">
                 <p>© 2026 LEYWIN • Todos os direitos reservados</p>
-                <p class="text-sm mt-2">Hospedado gratuitamente na Vercel • Desenvolvido com ❤️</p>
             </div>
         </div>
     </footer>
@@ -513,29 +512,53 @@
         let currentCategory = 'all';
         let currentSubcategory = null;
 
+        // Dados agora carregados exclusivamente de `products.json` e `suppliers.json`.
+        // Removidos os fallbacks embutidos para evitar duplicação — mantenha os dados nos arquivos JSON.
+
         // CARREGAR DADOS DOS ARQUIVOS JSON
         async function loadData() {
             try {
                 console.log('Iniciando carregamento de dados...');
                 
-                const prodResponse = await fetch('./products.json');
-                if (!prodResponse.ok) throw new Error(`Erro ao carregar produtos: ${prodResponse.status}`);
-                produtos = await prodResponse.json();
-                console.log('Produtos carregados:', produtos.length);
+                // Tentar carregar produtos (apenas de products.json)
+                try {
+                    const prodResponse = await fetch('./products.json');
+                    if (prodResponse.ok) {
+                        produtos = await prodResponse.json();
+                        console.log('✓ Produtos carregados do arquivo:', produtos.length);
+                    } else {
+                        throw new Error(`Status ${prodResponse.status}`);
+                    }
+                } catch (e) {
+                    console.warn('Não foi possível carregar products.json:', e.message);
+                    produtos = [];
+                }
                 
-                const suppResponse = await fetch('./suppliers.json');
-                if (!suppResponse.ok) throw new Error(`Erro ao carregar fornecedores: ${suppResponse.status}`);
-                fornecedores = await suppResponse.json();
-                console.log('Fornecedores carregados:', fornecedores.length);
+                // Tentar carregar fornecedores (apenas de suppliers.json)
+                try {
+                    const suppResponse = await fetch('./suppliers.json');
+                    if (suppResponse.ok) {
+                        fornecedores = await suppResponse.json();
+                        console.log('✓ Fornecedores carregados do arquivo:', fornecedores.length);
+                    } else {
+                        throw new Error(`Status ${suppResponse.status}`);
+                    }
+                } catch (e) {
+                    console.warn('Não foi possível carregar suppliers.json:', e.message);
+                    fornecedores = [];
+                }
                 
+                // Renderizar com os dados (arquivo ou fallback)
                 renderProducts(produtos);
                 renderSuppliers();
+                console.log('✓ Dados renderizados com sucesso');
+                
             } catch (error) {
-                console.error('Erro ao carregar dados:', error);
-                // Fallback: carregar dados inline se houver erro
-                if (produtos.length === 0) {
-                    console.warn('Usando dados fallback ou vazios');
-                }
+                console.error('Erro crítico ao carregar dados:', error);
+                produtos = [];
+                fornecedores = [];
+                renderProducts(produtos);
+                renderSuppliers();
             }
         }
 
@@ -604,12 +627,17 @@
             if (!container) return;
             
             container.innerHTML = '';
+            if (!fornecedores || fornecedores.length === 0) {
+                container.innerHTML = '<div class="col-span-full text-center py-8 text-gray-400">Nenhum fornecedor disponível</div>';
+                return;
+            }
+
             fornecedores.forEach(supplier => {
                 const card = `
                     <div class="bg-white/5 rounded-2xl border border-white/10 p-6 hover:bg-white/10 transition">
                         <div class="flex items-center gap-4 mb-4">
-                            <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center">
-                                <span class="text-black font-black text-xl">${supplier.icon}</span>
+                            <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center overflow-hidden flex-shrink-0">
+                                <img src="${supplier.image}" alt="${supplier.name}" class="w-full h-full object-cover">
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold">${supplier.name}</h3>

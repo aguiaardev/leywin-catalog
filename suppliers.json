@@ -2,25 +2,41 @@
   {
     "id": 1,
     "name": "Hoobuy",
-    "subtitle": "Agente principal",
-    "icon": "HB",
+    "subtitle": "Nosso agente principal",
+    "image": "https://play-lh.googleusercontent.com/9EpZLp3qclUfglE0r9Nbvv1ZJS6YEI2Z4zWT8kANdWlswG-VLp1QHyRgDrDJ5BhP5Lk",
     "description": "Melhor agente para produtos variados, com cupons e cashback.",
     "link": "https://hoobuy.com/?utm_source=website&utm_medium=ambassador&utm_campaign=linksharing&inviteCode=yEk3D7kE"
   },
   {
     "id": 2,
-    "name": "ACBuy",
-    "subtitle": "Agente alternativo",
-    "icon": "AC",
-    "description": "Ótimo para frete mais barato e produtos específicos.",
-    "link": "https://acbuy.com"
+    "name": "Superman Dinâmico",
+    "subtitle": "Fornecedor de placas de vídeo",
+    "image": "https://img.alicdn.com/bao/uploaded/i3/O1CN01DWNWL82A4IPtMgCR4_!!0-mtopupload.jpg_220x10000Q90.jpg_.webp",
+    "description": "Ótimo.",
+    "link": "https://www.goofish.com/personal?spm=a21ybx.item.itemHeader.1.12ca3da6pIndwr&userId=86508149"
   },
   {
     "id": 3,
-    "name": "Pandabuy",
-    "subtitle": "Agente popular",
-    "icon": "🐼",
-    "description": "Interface amigável e suporte em português.",
-    "link": "https://pandabuy.com"
+    "name": "Gengibre seco vietnamita que rola no chão",
+    "subtitle": "Fornecedor de macbooks",
+    "image": "https://img.alicdn.com/bao/uploaded/i2/O1CN019qLDa71wigrQeEVzZ_!!4611686018427387174-0-mtopupload.jpg_220x10000Q90.jpg_.webp",
+    "description": "bom.",
+    "link": "https://www.goofish.com/personal?spm=a21ybx.item.itemHeader.1.43073da620bezC&userId=2208746626342"
+  },
+  {
+    "id": 4,
+    "name": "O pequeno pássaro que luta",
+    "subtitle": "Fornecedor de notebooks",
+    "image": "https://img.alicdn.com/bao/uploaded/i4/O1CN01i2APeh1Iz6LFl4SON_!!0-mtopupload.jpg_220x10000Q90.jpg_.webphttps://img.alicdn.com/bao/uploaded/i4/O1CN01i2APeh1Iz6LFl4SON_!!0-mtopupload.jpg_220x10000Q90.jpg_.webp",
+    "description": "Ótimo.",
+    "link": "https://www.goofish.com/personal?spm=a21ybx.item.itemHeader.1.67b43da6zPhDrB&userId=1640070963"
+  },
+  {
+    "id": 5,
+    "name": "Periféricos Logitech de Jinling",
+    "subtitle": "Fornecedor Logitech",
+    "image": "https://img.alicdn.com/bao/uploaded/i4/O1CN01UKodqo1QGEHBgDJT8_!!0-mtopupload.jpg_220x10000Q90.jpg_.webp",
+    "description": "Ótimo.",
+    "link": "https://www.goofish.com/personal?spm=a21ybx.item.itemHeader.1.3f9a3da6fd7SjG&userId=751861948"
   }
 ]
